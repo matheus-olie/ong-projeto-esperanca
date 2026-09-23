@@ -4,6 +4,7 @@ import api from '../servicos/api';
 import Modal from '../componentes/Modal';
 
 import {
+    somenteNumeros,
     formatarCPF,
     formatarTelefone,
     validarCPF,
@@ -399,7 +400,7 @@ function Assistidos() {
                                         </td>
 
                                         <td>
-                                            {assistido.cpf}
+                                            {formatarCPF(assistido.cpf)}
                                         </td>
 
                                         <td>
@@ -419,7 +420,7 @@ function Assistidos() {
                                         </td>
 
                                         <td>
-                                            {assistido.telefone}
+                                            {formatarTelefone(assistido.telefone)}
                                         </td>
 
                                         {ehAdministrador && (

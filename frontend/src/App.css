@@ -335,6 +335,8 @@ body {
     color: #4b5563;
 
     font-size: 14px;
+
+    white-space: nowrap;
 }
 
 .tabela-container tr:hover {
@@ -1815,3 +1817,7 @@ body {
         z-index: 1100;
     }
 }
+
+/* ========================= */
+/* DADOS SEM QUEBRA DE LINHA */
+/* ========================= */
