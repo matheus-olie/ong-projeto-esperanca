@@ -1,0 +1,65 @@
+/* ===================================================== */
+/* CORREÇÃO LAYOUT TABLET / MOBILE */
+/* ===================================================== */
+
+@media (max-width: 1023px) {
+
+    /* Estrutura deixa de reservar espaço para sidebar */
+    .estrutura {
+        display: block;
+        width: 100%;
+        min-height: 100vh;
+    }
+
+    /* Conteúdo principal ocupa toda a tela */
+    .area-principal {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    /* Conteúdo das páginas */
+    .conteudo {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .pagina {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    /* Sidebar deixa de participar do fluxo da página */
+    .menu-lateral {
+        position: fixed;
+
+        top: 60px;
+        left: -280px;
+
+        width: 260px;
+        min-width: 260px;
+
+        height: calc(100vh - 60px);
+
+        display: flex;
+        flex-direction: column;
+
+        z-index: 1050;
+    }
+
+    .menu-lateral.menu-aberto {
+        left: 0;
+    }
+
+    /* Barra superior */
+    .barra-mobile {
+        display: flex;
+        position: relative;
+        width: 100%;
+        z-index: 1100;
+    }
+}
